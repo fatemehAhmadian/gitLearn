@@ -30,3 +30,29 @@ git reset <id commit> : back to specifice commit change
 
 git reset --hard <id commit> : back to specifice commit change
     discribe : without need to checkout it return completley and delete the file that then weren't or add file the at that commit were there.
+
+
+------------------------------------BRANCH
+git branch <branch name> : make a branch 
+git chechout -b <branch name> : another way for build branch
+
+git branch -a : show all branches
+git checkout <branch name> : switch to branch <branch name>
+git branch -d <branch name> : delete branch <branch name>
+
+
+*** before change the branch make sure thet all changes are commited ***
+
+merge branches => 
+                first : we should switch to main branch that we wand to add another brach to it.
+                last : run this command -> git merge <branch name>
+
+git log --graph : by this command we can see the log better that means we can see witch log balong to witch branch.
+
+
+*** if we change same file in two branch and merch the branch make conflict and the showing branch name change to <branch name>|MERGING 
+in this case we have two options : 
+            1 -> git status -> git merge --abort : this will abort the merge
+            2 -> git status -> go to the file that have comflect and choose the change that you want by your hand.
+
+            after any of this option make sure to commit all the changes.
