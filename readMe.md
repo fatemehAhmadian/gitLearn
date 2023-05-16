@@ -26,4 +26,7 @@ git restore --staged . : unstage files
 
 
 git reset <id commit> : back to specifice commit change
-    discribe : after run above command we return to the commit that point it with it's id and it's file return to Unstaged (unstaged after reset) and for make the change apply we should run <git checkout -- . > comand
+    discribe : after run above command we return to the commit that point it with it's id and it's file return to Unstaged (unstaged after reset) and for make the change apply we should run <git checkout -- . > comand.
+
+git reset --hard <id commit> : back to specifice commit change
+    discribe : without need to checkout it return completley and delete the file that then weren't or add file the at that commit were there.
