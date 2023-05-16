@@ -56,3 +56,25 @@ in this case we have two options :
             2 -> git status -> go to the file that have comflect and choose the change that you want by your hand.
 
             after any of this option make sure to commit all the changes.
+
+git stash : this command help us when we have uncommited file and we don't want commit theme now but if we switch to another branch this change comes with us and we don't want it soooo with this command we save this change in stash and when we need theme we can find them in stash
+
+another command for save stash => git stach save "message" 
+
+git stash list : show list of stash
+
+git stash drop <name of stash> : remove the stash (<name of stash>) 
+
+git stash show <stash name> / git stash show -p <stash name> : show the changes
+
+git stash pop <stash name> / git stash apply <stash name> : apply stash that not commited with <pop> it will be deleted from stash list but with <apply> it just will be apply and don't deleted from the list and we should delete it by our hand.
+
+
+------------------------------------------- GITIGNOR
+
+touch .gitignor.txt : create .gitignor file
+
+*** add files name to gitignor the we wand git ignore them ***
+
+git 
+ 
