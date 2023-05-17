@@ -72,9 +72,12 @@ git stash pop <stash name> / git stash apply <stash name> : apply stash that not
 
 ------------------------------------------- GITIGNOR
 
-touch .gitignor.txt : create .gitignor file
+touch .gitignor : create .gitignor file
 
-*** add files name to gitignor the we wand git ignore them ***
+*** add files name to gitignore file that we want git ignore them ***
 
-git 
+*** if we wand ignore some files that we was track theme we can use this command for clear catch :
+    git rm --cached -r . -> git status -> git add . -> git commit "message"
+    discription :-> first clear cache -> then check staus -> then add files that git don't ignore them to git -> and last commit this files to git.
+ 
  
